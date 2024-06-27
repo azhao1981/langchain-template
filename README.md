@@ -28,7 +28,8 @@ build.sh
 which poetry
 
 # 添加依赖:
-poetry add requests
+poetry lock
+poetry install --no-root
 
 # 运行
 poetry run python main.py
